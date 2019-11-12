@@ -107,8 +107,7 @@
 #main-nav .menu-btn {
     display: none;
 }
-
-#main-nav .menu-btn:checked ~ .menu {
+. #main-nav .menu-btn:checked ~ .menu {
     -moz-transform: translate3d(0px, 0, 0);
     -webkit-transform: translate3d(0px, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -397,7 +396,7 @@ nav ol {
 
 /* Breadcrumb */
 #breadcrumb {
-    padding: 50px 0 20px;
+    padding: 20px 0 20px;
 }
 #breadcrumb ul {
     margin: 0;
@@ -604,6 +603,11 @@ textarea:focus,
 }
 
 /* Rows */
+.row1,
+.row1 a {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.72);
+}
 .row2,
 .row2 a {
     color: #ffffff;

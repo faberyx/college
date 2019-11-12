@@ -107,7 +107,7 @@
 #main-nav .menu-btn {
     display: none;
 }
-. #main-nav .menu-btn:checked ~ .menu {
+#main-nav .menu-btn:checked ~ .menu {
     -moz-transform: translate3d(0px, 0, 0);
     -webkit-transform: translate3d(0px, 0, 0);
     transform: translate3d(0, 0, 0);

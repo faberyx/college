@@ -89,7 +89,7 @@ body {
     padding: 15px 25px 17px;
     text-transform: uppercase;
     border: 1px solid;
-    border-radius: 0 15px;
+    border-radius: 15px;
 }
 .btn.medium {
     padding: 10px 20px 12px;
@@ -286,6 +286,7 @@ section {
 .three_quarter {
     display: inline-block;
     float: left;
+
     margin: 0 0 0 3.06748466257669%;
     list-style: none;
 }

@@ -709,23 +709,6 @@ textarea:focus,
     color: #47846d;
 }
 
-.container .sidebar nav a {
-    color: inherit;
-    border-color: #d7d7d7;
-}
-.container .sidebar nav a:hover {
-    color: #47846d;
-}
-
-.pagination a,
-.pagination strong {
-    border-color: #d7d7d7;
-}
-.pagination .current * {
-    color: #ffffff;
-    background-color: #47846d;
-}
-
 #backtotop {
     color: #ffffff;
     background-color: #47846d;

@@ -241,6 +241,17 @@
     margin-bottom: 0;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border: 2px solid #dfdfdf;
+    font-size: 14px;
+    color: #757575;
+}
 /* Testimonials- */
 #testimonials li:last-child {
     margin-bottom: 0;

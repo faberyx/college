@@ -8,12 +8,12 @@ $().ready(function() {
                 clickClose: true,
                 showClose: true
             });
-            $("#membershipForm input[type='text'],#membershipForm input[type='email'], #membershipForm textarea").val("");
+            $("#contactForm input[type='text'],#contactForm input[type='email'], #contactForm textarea").val("");
         }
     });
 
     $().ready(function() {
-        $("#membershipForm").validate({
+        $("#contactForm").validate({
             rules: {
                 firstname: "required",
                 lastname: "required",
@@ -30,7 +30,7 @@ $().ready(function() {
                     required: "Please enter your email",
                     email: "Please enter a valid email address"
                 },
-                comment: "Please enter a comment"
+                comment: "Please enter a message"
             }
         });
     });

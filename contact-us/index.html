@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link href="../styles/layout.css" rel="stylesheet" type="text/css" media="all" />
     </head>
+
     <body id="top">
         <div class="bgded" style="background:url('../images/backgrounds/golf_bkg_1.jpg') center center;">
             <div class="wrapper overlay">
@@ -29,12 +30,13 @@
                             <li><a href="/facilities">Facilities</a></li>
                             <li><a href="/fees">Fees</a></li>
                             <li><a href="/news">News</a></li>
-                            <li class="active"><a href="/about-us">About Us</a></li>
+                            <li class="active"><a href="/contact-us">Contact Us</a></li>
                         </ul>
                     </nav>
                     <div id="logo">
                         <h1>
                             <a href="/">Gorilla Island Golf Club</a>
+                            <p>Contact Us</p>
                         </h1>
                     </div>
                 </header>
@@ -50,51 +52,62 @@
         </div>
         <div class="wrapper row3">
             <main class="hoc container clear">
-                <!-- main body -->
-                <!-- ################################################################################################ -->
                 <div class="content">
-                    <!-- ################################################################################################ -->
-                    <h2>Half</h2>
-                    <!-- ################################################################################################ -->
-                    <div class="group btmspace-50 demo">
-                        <div class="one_half first">1/2</div>
-                        <div class="one_half">1/2</div>
+                    <div class="center btmspace-50">
+                        <h1 class="gold">Contact Us</h1>
+                        <hr />
                     </div>
-                    <!-- ################################################################################################ -->
-                    <h2>Quarter</h2>
-                    <!-- ################################################################################################ -->
-                    <div class="group btmspace-50 demo">
-                        <div class="one_quarter first">1/4</div>
-                        <div class="one_quarter">1/4</div>
-                        <div class="one_quarter">1/4</div>
-                        <div class="one_quarter">1/4</div>
+                    <p>
+                        Gorilla Island Golf Club team is always on hand to assist with any questions or queries you may have about our
+                        facility. You can contact our team by phone, email or using the contact form on this page.
+                    </p>
+                    <div class="wrapper row3">
+                        <section>
+                            <div class="wrapper row3">
+                                <div class="center btmspace-50">
+                                    <hr />
+                                </div>
+
+                                <form id="contactForm" novalidate="novalidate" action method="GET">
+                                    <div class="one_half first">
+                                        <label for="firstname">First Name:<span>*</span></label>
+                                        <input type="text" name="firstname" id="firstname" value="" size="22" required />
+                                    </div>
+                                    <div class="one_half">
+                                        <label for="lastname">Last Name:<span>*</span></label>
+                                        <input type="text" name="lastname" id="lastname" value="" size="22" required />
+                                    </div>
+                                    <div class="one_half first">
+                                        <label for="email">Phone Number:</label>
+                                        <input type="tel" name="phone" id="phone" value="" size="55" />
+                                    </div>
+                                    <div class="one_half">
+                                        <label for="email">Email Address:<span>*</span></label>
+                                        <input type="email" name="email" id="email" value="" size="55" required />
+                                    </div>
+
+                                    <div class="block clear">
+                                        <label for="comment">Your Message:</label>
+                                        <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+                                    </div>
+                                    <div>
+                                        <input class="btn" type="submit" name="submit" value="Submit Form" />
+                                        &nbsp;
+                                        <input class="btn" type="reset" name="reset" value="Reset Form" />
+                                    </div>
+                                </form>
+
+                                <div class="modal center" id="form-submit-modal">
+                                    <div class="stack">
+                                        <h2>Hi <span id="modalFirstName"></span>, thanks for contacting us!</h2>
+                                        <p>Your Request has been submitted, we will reply a soon as possible!</p>
+                                        <a id="modal-close" href="#" class="btn btn-primary" rel="modal:close">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="group btmspace-50 demo">
-                        <div class="one_quarter first">1/4</div>
-                        <div class="one_quarter">1/4</div>
-                        <div class="two_quarter">2/4 or 1/2</div>
-                    </div>
-                    <div class="group btmspace-50 demo">
-                        <div class="one_quarter first">1/4</div>
-                        <div class="three_quarter">3/4</div>
-                    </div>
-                    <!-- ################################################################################################ -->
-                    <h2>Third</h2>
-                    <!-- ################################################################################################ -->
-                    <div class="group btmspace-50 demo">
-                        <div class="one_third first">1/3</div>
-                        <div class="one_third">1/3</div>
-                        <div class="one_third">1/3</div>
-                    </div>
-                    <div class="group demo">
-                        <div class="one_third first">1/3</div>
-                        <div class="two_third">2/3</div>
-                    </div>
-                    <!-- ################################################################################################ -->
                 </div>
-                <!-- ################################################################################################ -->
-                <!-- / main body -->
-                <div class="clear"></div>
             </main>
         </div>
 
@@ -174,7 +187,11 @@
         </div>
         <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
         <!-- JAVASCRIPTS -->
-        <script src="layout/scripts/jquery.min.js"></script>
-        <script src="layout/scripts/jquery.backtotop.js"></script>
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+        <script src="../scripts/contact-scripts.js"></script>
+        <script src="../scripts/jquery.backtotop.js"></script>
     </body>
 </html>

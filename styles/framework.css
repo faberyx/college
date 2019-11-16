@@ -18,6 +18,12 @@ body {
     box-sizing: border-box;
 }
 
+.gold {
+    color: #b69357;
+}
+.blue {
+    color: #077ba9;
+}
 .bold {
     font-weight: bold;
 }
@@ -89,7 +95,7 @@ body {
     padding: 15px 25px 17px;
     text-transform: uppercase;
     border: 1px solid;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 .btn.medium {
     padding: 10px 20px 12px;
@@ -217,10 +223,6 @@ h6,
     font-weight: normal;
 }
 
-address {
-    font-style: normal;
-    font-weight: normal;
-}
 hr {
     display: block;
     width: 100%;
@@ -250,10 +252,6 @@ hr {
     text-align: left;
     word-wrap: break-word;
 }
-/*
-The "hoc" class is a generic class used to centre a containing element horizontally
-It should be used in conjunction with a second class or ID
-*/
 .hoc {
     display: block;
     margin: 0 auto;

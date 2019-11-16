@@ -423,65 +423,6 @@ nav ol {
     display: none;
 }
 
-/* Sidebar Navigation */
-.sidebar nav {
-    display: block;
-    width: 100%;
-}
-.sidebar nav li {
-    margin: 0 0 3px 0;
-    padding: 0;
-}
-.sidebar nav a {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 5px 10px 5px 15px;
-    text-decoration: none;
-    border: solid;
-    border-width: 0 0 1px 0;
-}
-.sidebar nav a::after {
-    top: 9px;
-    left: 5px;
-    content: "\f101";
-}
-.sidebar nav ul ul a {
-    padding-left: 35px;
-}
-.sidebar nav ul ul a::after {
-    left: 25px;
-}
-.sidebar nav ul ul ul a {
-    padding-left: 55px;
-}
-.sidebar nav ul ul ul a::after {
-    left: 45px;
-}
-
-/* Pagination */
-.pagination {
-    display: block;
-    width: 100%;
-    text-align: center;
-    clear: both;
-}
-.pagination li {
-    display: inline-block;
-    margin: 0 2px 0 0;
-}
-.pagination li:last-child {
-    margin-right: 0;
-}
-.pagination a,
-.pagination strong {
-    display: block;
-    padding: 8px 11px;
-    border: 1px solid;
-    background-clip: padding-box;
-    font-weight: normal;
-}
-
 /* Back to Top */
 #backtotop {
     z-index: 999;
@@ -625,6 +566,11 @@ textarea:focus,
 .coloured {
     color: #ffffff;
     background-color: #47846d;
+}
+.coloured-dark {
+    color: #ffffff;
+    background: rgb(21, 60, 45);
+    background: linear-gradient(90deg, rgb(18, 51, 38) 0%, rgba(21, 60, 45, 1) 65%, rgb(24, 85, 62) 100%);
 }
 
 /* Header */

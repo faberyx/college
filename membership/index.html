@@ -13,6 +13,8 @@
     <meta name="description" content="Gorilla Island golf course, membership" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="../styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../styles/jquery.modal.min.css" rel="stylesheet" type="text/css" media="all" />
+    
 </head>
 
 <body id="top">
@@ -200,11 +202,11 @@
                 <p class="btmspace-30">
                     Subscribe to receive our monthly newsletter.
                 </p>
-                <form method="post" action="#">
+                <form id="newsletterForm" novalidate="novalidate" action method="GET">
                     <fieldset>
                         <legend>Newsletter:</legend>
-                        <input class="btmspace-15" type="text" value="" placeholder="Name" />
-                        <input class="btmspace-15" type="text" value="" placeholder="Email" />
+                        <input class="btmspace-15" type="text" value="" name="name" placeholder="Name" required  />
+                        <input class="btmspace-15" type="email"  name="email" value="" placeholder="Email" required />
                         <button type="submit" value="submit">Submit</button>
                     </fieldset>
                 </form>
@@ -248,13 +250,19 @@
             </p>
         </div>
     </div>
+    <div class="modal center" id="newsletter-modal">
+        <div class="stack">
+            <h2>Hi <span id="newsletterName"></span>, thanks for subscribing to our newsletter!</h2>
+            <a id="modal-close" href="#" class="btn btn-primary" rel="modal:close">Close</a>
+        </div>
+    </div>
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     <!-- JAVASCRIPTS -->
     <script src="../scripts/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-    <script src="../scripts/membership-scripts.js"></script>
+    <script src="../scripts/jquery.modal.min.js"></script>
+    <script src="../scripts/jquery.validate.min.js"></script>
+    <script src="../scripts/membership.js"></script>
+    <script src="../scripts/newsletter.js"></script>
     <script src="../scripts/jquery.backtotop.js"></script>
 </body>
 

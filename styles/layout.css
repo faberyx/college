@@ -252,6 +252,29 @@ textarea {
     font-size: 14px;
     color: #757575;
 }
+
+form input.error,
+form label.error {
+    color: rgb(229, 24, 58);
+}
+
+form label.error {
+    font-size: 0.8em;
+    height: 30px;
+    padding-top: 2px;
+}
+
+form textarea.error,
+form input.error {
+    border-color: rgba(229, 24, 58, 0.5);
+    margin-bottom: 0;
+}
+
+form textarea.error::placeholder,
+form input.error::placeholder {
+    color: rgb(229, 24, 58);
+}
+
 /* Testimonials- */
 #testimonials li:last-child {
     margin-bottom: 0;
